@@ -1,0 +1,171 @@
+/* Pie de pagina de YuumiStore */
+
+.footer {
+  width: 100%;
+  margin-top: 64px;
+  padding: 36px 24px 20px;
+  box-sizing: border-box;
+
+  color: #e7e8ef;
+  background: rgba(15, 16, 23, 0.78);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Contenido principal */
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr;
+  gap: 36px;
+
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+/* Marca de la tienda */
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer__logo {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.footer__logo:hover {
+  color: #ff8492;
+}
+
+.footer__brand p,
+.footer__info p {
+  margin: 0;
+
+  color: #b9bbc8;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* Enlaces del footer */
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer__links h2,
+.footer__info h2 {
+  margin: 0 0 4px;
+
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer__links a {
+  color: #b9bbc8;
+  font-size: 0.9rem;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.footer__links a:hover {
+  color: #b9c4ff;
+}
+
+/* Informacion de la tienda */
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Franja inferior */
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  width: min(1100px, 100%);
+  margin: 32px auto 0;
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__bottom p,
+.footer__bottom span {
+  margin: 0;
+
+  color: #9295a5;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* Ajustes para tablets */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 20px 18px;
+  }
+
+  .footer__content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer__bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* Ajustes para celulares */
+
+@media (max-width: 480px) {
+  .footer {
+    margin-top: 40px;
+    padding: 26px 16px 18px;
+  }
+
+  .footer__content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+
+  .footer__brand {
+    grid-column: auto;
+  }
+
+  .footer__logo {
+    font-size: 1.2rem;
+  }
+
+  .footer__bottom {
+    margin-top: 26px;
+    gap: 8px;
+  }
+}

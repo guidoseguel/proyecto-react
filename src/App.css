@@ -1,0 +1,32 @@
+/* Estructura general de la pagina */
+
+#root {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+/* Contenido de cada pagina */
+
+main {
+  display: block;
+  flex: 1;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* El footer queda al final del contenido */
+
+.footer {
+  flex-shrink: 0;
+}

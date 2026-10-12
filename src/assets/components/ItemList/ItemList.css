@@ -1,0 +1,41 @@
+/* Grilla de productos */
+
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 0 32px;
+
+  box-sizing: border-box;
+}
+
+/* Ajustes para tablets */
+
+@media (max-width: 960px) {
+  .item-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+/* Ajustes para celulares */
+
+@media (max-width: 600px) {
+  .item-list {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding-top: 8px;
+  }
+}
+
+/* Pantallas muy pequeñas */
+
+@media (max-width: 360px) {
+  .item-list {
+    gap: 14px;
+  }
+}
