@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "ASUS ROG GeForce RTX 5090",
+    "description": "Placa de video de alto rendimiento para gaming y creación de contenido.",
+    "price": 9999999,
+    "image": "/rtx-5090.png",
+    "category": "placas-de-video"
+  },
+  {
+    "id": 2,
+    "name": "AMD Ryzen 9 9950X3D",
+    "description": "Procesador de alto rendimiento para gaming y multitarea.",
+    "price": 1899999,
+    "image": "/ryzen-9950x3d.png",
+    "category": "procesadores"
+  },
+  {
+    "id": 3,
+    "name": "ASUS ROG X870 Glacial",
+    "description": "Motherboard premium para una PC gamer de alto rendimiento.",
+    "price": 3499999,
+    "image": "/rog-x670.png",
+    "category": "motherboards"
+  }
+]
